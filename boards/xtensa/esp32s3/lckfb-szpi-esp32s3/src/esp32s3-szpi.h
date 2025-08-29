@@ -196,5 +196,7 @@ int esp32s3_pca9557_initialize(void);
 int esp32s3_ft5x06_initialize(void);
 #endif
 
+int gc0308_initialize(void);
+
 #endif /* __ASSEMBLY__ */
 #endif /* __BOARDS_XTENSA_ESP32S3_LCKFB_SZPI_ESP32S3_SRC_ESP32S3_DEVKIT_H */

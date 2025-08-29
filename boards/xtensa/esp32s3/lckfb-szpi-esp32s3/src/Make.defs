@@ -60,3 +60,5 @@ endif
 ifeq ($(CONFIG_INPUT_FT5X06),y)
 CSRCS += esp32s3_ft5x06.c
 endif
+
+CSRCS += esp32s3_gc0308.c
