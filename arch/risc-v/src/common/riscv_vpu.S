@@ -150,6 +150,9 @@ riscv_restorevpu:
   li           t1, MSTATUS_VS_INIT
   ble          t2, t1, 1f
 
+  /* Enable VPU before executing vector instructions */
+  csrs         CSR_STATUS, t1
+
   riscv_loadvpu a1
 
 1:
